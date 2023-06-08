@@ -1,0 +1,213 @@
+*
+{
+    box-sizing: border-box;
+    
+}
+:root
+{
+    --border-clr-1:black;
+    --border-clr-2:blue;
+    --border-clr-3:red;
+    --border-clr-4:aqua;
+    --border-clr-5:rosybrown;
+    --border-clr-6:brown;
+    --border-width:2px;
+}
+body
+{
+    position: relative;
+    height: 95vh;
+}
+.contanier
+{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 625px;
+    width: 35%;
+    border-radius: 15px;
+    box-shadow:0px 5px 15px  rgba(0, 0, 0, 0.35) ;
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.creditCardParts
+{
+    position: relative;
+    width: 100%;
+    height: 35%;
+}
+.card-front
+{
+    position: absolute;
+    height: 100%;
+    width: 70%;
+    top:-50%;
+    left:15%;  
+    background-image: url("C:/Users/enes.tepehan/Desktop/%C3%96devler/imgs/cardbackground.jpg");
+    background-size: 100% 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 5px 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    opacity: 1;
+    
+}
+.chip
+{
+    float: left;
+    display: flex;
+    align-items: center;
+
+}
+.visa
+{
+    float: right;
+    margin-top:10px;
+}
+.chip img:nth-child(1)
+{
+    width:70px;
+    height: 55px;
+}
+.chip img:nth-child(2)
+{
+    width: 35px;
+    height: 30px;
+}
+.visa img
+{
+    width:60px;
+    height: 35px;
+}
+.card-number-parts
+{
+    clear: both;
+    font-size: 25px;
+    border: 1px solid white;
+    text-align: center;
+    
+    
+}
+.holder-and-expires
+{
+    border: 1PX solid white;
+}
+.holder
+{ 
+    border: 1PX solid white;
+    float: left;
+}
+.expires{
+     border: 1PX solid white;
+     float: right;
+    }
+    .card-back
+    {
+        position: absolute;
+    height: 100%;
+    width: 70%;
+    top:-50%;
+    left:15%;  
+    background-image: linear-gradient(to right, #0737f7,#32a5cb,#0737f7);
+    background-size: 100% 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    opacity: 0;
+    }
+    .black-line
+    {
+        width: 100%;
+        background-color: black;
+        opacity: 0.7;
+        height: 20%;
+    }
+    .cvv-text-input
+    {
+        height: 20%;
+        width: 100%;
+    }
+    .cvv-text
+    {
+        float: right;
+    }
+    .cvv-input
+    {
+        width: 100%;
+        background-color: white;
+        height: 100%;
+        padding-top:8px;
+        padding-right: 3px;
+        padding-bottom: 8px;
+        text-align: right;
+        color: black;
+    }
+    .visa-back img
+    {
+        width:60px;
+    height: 35px;
+    float: right;
+    } 
+    input
+    {
+        border:none;
+        box-shadow:0px 5px 15px  rgba(0, 0, 0, 0.35) ;
+        border-radius:3px;
+    }
+    input[type=text]
+    {
+        margin-bottom: 40px;
+        height: 45px;
+        width: 100%;
+    }
+
+
+.Expire
+{
+    width: 50%;
+    float: left;
+}
+select
+{
+    width: 40%;
+    height: 30px;
+    border: none;
+    box-shadow:0px 5px 15px  rgba(0, 0, 0, 0.35) ;
+}
+.cvv-information
+{
+    width: 50%;
+    float: right;
+}
+#card-cvv-text
+{
+    width: 100%;
+    height: 30px;
+}
+.cardButton
+{
+    width: 100%;
+    height: 15%;
+    clear: both;
+}
+button
+{
+    width: 100%;
+    background-image: linear-gradient(to right, #0737f7,#32a5cb,#0737f7);
+    color: white;
+    border: none;
+    padding: 15px 0px;
+}
+label{
+    color:rgba(0, 0, 0, 0.5);
+    font-size: 4.2mm;
+}
